@@ -7,7 +7,6 @@
     "description": "Simple Notebooks."
   },
   "HomePage": {
-    "title": "Simple Notebooks",
     "signIn": "Войти",
     "features": {
       "chatWithYourSources": {
@@ -27,5 +26,17 @@
         "description": "Создавайте ответы на частые вопросы, краткие справки и учебные материалы из своих источников автоматически, без всяких запросов."
       }
     }
+  },
+  "SignInPage": {
+    "title": "С возвращением",
+    "subtitle": "Введите свои данные, чтобы продолжить",
+    "username": "Имя пользователя",
+    "usernamePlaceholder": "johndoe",
+    "password": "Пароль",
+    "forgotPassword": "Забыли пароль?",
+    "submit": "Продолжить",
+    "noAccount": "Нет аккаунта?",
+    "signUp": "Зарегистрироваться",
+    "genericError": "Что-то пошло не так. Попробуйте ещё раз."
   }
 }

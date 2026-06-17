@@ -15,6 +15,7 @@ import {
 } from "@radix-ui/themes";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
+import { Logo } from "@/components/logo";
 import { Link as NextLink } from "@/i18n/navigation";
 
 const featureDefs = [
@@ -39,10 +40,10 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
 
   return (
     <Flex width="100vw" height="100svh" direction="column" px="4" py="9">
-      <Grid maxWidth="448px" width="100%" gap="7" m="auto">
-        <Flex direction="row" align="center" justify="between" gap="4">
-          <Heading size="5">{t("title")}</Heading>
-          <Link size="2" highContrast asChild>
+      <Grid maxWidth="512px" width="100%" gap="7" m="auto">
+        <Flex direction="row" align="baseline" justify="between" gap="4">
+          <Logo href="/" />
+          <Link size="3" highContrast asChild>
             <NextLink href="/sign-in">{t("signIn")}</NextLink>
           </Link>
         </Flex>
@@ -59,12 +60,12 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
                 asChild
               >
                 <li>
-                  <feature.icon size={16} />
-                  <Heading size="2" as="h2">
+                  <feature.icon size={16} style={{ marginTop: "2px" }} />
+                  <Heading size="3" as="h2">
                     {feature.title}
                   </Heading>
                   <Text
-                    size="2"
+                    size="3"
                     wrap="pretty"
                     style={{
                       gridColumnStart: "2",
@@ -81,10 +82,10 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
         <Separator size="4" />
 
         <Flex direction="row" align="center" justify="between" gap="4">
-          <Code size="1" variant="ghost" color="gray">
+          <Code size="2" variant="ghost" color="gray">
             v0.0.1
           </Code>
-          <Text size="1">
+          <Text size="2">
             Made with ♡ by{" "}
             <Link highContrast asChild>
               <NextLink href="https://www.mysko.kz/">Mysko</NextLink>

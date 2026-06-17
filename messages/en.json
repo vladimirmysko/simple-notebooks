@@ -7,7 +7,6 @@
     "description": "Simple Notebooks."
   },
   "HomePage": {
-    "title": "Simple Notebooks",
     "signIn": "Sign in",
     "features": {
       "chatWithYourSources": {
@@ -27,5 +26,17 @@
         "description": "Create FAQs, briefing docs, or study guides from your sources automatically. No prompting required."
       }
     }
+  },
+  "SignInPage": {
+    "title": "Welcome back",
+    "subtitle": "Enter your credentials to continue",
+    "username": "Username",
+    "usernamePlaceholder": "johndoe",
+    "password": "Password",
+    "forgotPassword": "Forgot password?",
+    "submit": "Continue",
+    "noAccount": "Don't have an account?",
+    "signUp": "Sign up",
+    "genericError": "Something went wrong. Please try again."
   }
 }

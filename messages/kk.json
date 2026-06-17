@@ -7,7 +7,6 @@
     "description": "Simple Notebooks."
   },
   "HomePage": {
-    "title": "Simple Notebooks",
     "signIn": "Кіру",
     "features": {
       "chatWithYourSources": {
@@ -27,5 +26,17 @@
         "description": "Дереккөздеріңізден жиі қойылатын сұрақтарды, қысқаша анықтамалар мен оқу құралдарын автоматты түрде жасаңыз. Ешқандай сұрау жазудың қажеті жоқ."
       }
     }
+  },
+  "SignInPage": {
+    "title": "Қайта келдіңіз",
+    "subtitle": "Жалғастыру үшін деректеріңізді енгізіңіз",
+    "username": "Пайдаланушы аты",
+    "usernamePlaceholder": "johndoe",
+    "password": "Құпия сөз",
+    "forgotPassword": "Құпия сөзді ұмыттыңыз ба?",
+    "submit": "Жалғастыру",
+    "noAccount": "Тіркелгіңіз жоқ па?",
+    "signUp": "Тіркелу",
+    "genericError": "Бірдеңе дұрыс болмады. Қайталап көріңіз."
   }
 }
