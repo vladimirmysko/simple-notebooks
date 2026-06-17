@@ -1,0 +1,26 @@
+export const authTranslations = {
+  ru: {
+    USER_NOT_FOUND: "Пользователь не найден",
+    INVALID_EMAIL_OR_PASSWORD: "Неверный email или пароль",
+    INVALID_PASSWORD: "Неверный пароль",
+    CREDENTIAL_ACCOUNT_NOT_FOUND: "Учётная запись не найдена",
+    EMAIL_NOT_VERIFIED: "Email не подтверждён",
+    SESSION_EXPIRED: "Сессия истекла",
+    USER_ALREADY_EXISTS: "Пользователь уже существует",
+    USERNAME_IS_ALREADY_TAKEN: "Имя пользователя уже занято",
+    INVALID_USERNAME: "Недопустимое имя пользователя",
+    USER_BANNED: "Вы заблокированы в этом приложении",
+  },
+  kk: {
+    USER_NOT_FOUND: "Пайдаланушы табылмады",
+    INVALID_EMAIL_OR_PASSWORD: "Email немесе құпия сөз дұрыс емес",
+    INVALID_PASSWORD: "Құпия сөз дұрыс емес",
+    CREDENTIAL_ACCOUNT_NOT_FOUND: "Тіркелгі табылмады",
+    EMAIL_NOT_VERIFIED: "Email расталмаған",
+    SESSION_EXPIRED: "Сеанс мерзімі аяқталды",
+    USER_ALREADY_EXISTS: "Пайдаланушы бұрыннан бар",
+    USERNAME_IS_ALREADY_TAKEN: "Пайдаланушы аты бос емес",
+    INVALID_USERNAME: "Пайдаланушы аты жарамсыз",
+    USER_BANNED: "Сіз бұл қолданбада бұғатталғансыз",
+  },
+} as const;
