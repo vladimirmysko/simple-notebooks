@@ -1,0 +1,8 @@
+# Lockfiles (committed; must not be reformatted)
+bun.lock
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Tooling cache (not in .gitignore)
+.turbo
