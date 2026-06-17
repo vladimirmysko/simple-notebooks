@@ -5,5 +5,27 @@
   "LocaleLayout": {
     "title": "Simple Notebooks",
     "description": "Simple Notebooks."
+  },
+  "HomePage": {
+    "title": "Simple Notebooks",
+    "signIn": "Sign in",
+    "features": {
+      "chatWithYourSources": {
+        "title": "Chat with your sources",
+        "description": "Ask questions and get clear answers based only on the material you upload, with citations that point back to the exact passage."
+      },
+      "anyFormatOneKnowledgeBase": {
+        "title": "Any format, one knowledge base",
+        "description": "Add PDFs, paste a URL, or drop in raw text. Everything is indexed together so you can search across it all."
+      },
+      "audioOverviews": {
+        "title": "Audio overviews",
+        "description": "Turn your sources into a natural, podcast-style conversation you can listen to instead of reading."
+      },
+      "instantSummariesStudyGuides": {
+        "title": "Instant summaries & study guides",
+        "description": "Create FAQs, briefing docs, or study guides from your sources automatically. No prompting required."
+      }
+    }
   }
 }

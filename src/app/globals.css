@@ -1,4 +1,8 @@
 :root {
+  font-feature-settings:
+    "liga" 1,
+    "calt" 1;
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -18,7 +22,7 @@ body {
 }
 
 .radix-themes {
-  --default-font-family: var(--font-inter);
+  --default-font-family: Inter, sans-serif;
 
   --font-weight-light: 400;
   --font-weight-regular: 400;
@@ -48,6 +52,12 @@ body {
 .rt-r-size-8,
 .rt-r-size-9 {
   font-variation-settings: "opsz" 32;
+}
+
+@supports (font-variation-settings: normal) {
+  .radix-themes {
+    --default-font-family: InterVariable, sans-serif;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
