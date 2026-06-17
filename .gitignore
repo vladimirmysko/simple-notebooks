@@ -46,3 +46,9 @@ messages/*.d.json.ts
 
 # prisma
 /src/generated/prisma
+
+# agents
+.agents/
+.cursor/
+.claude/
+skills-lock.json
