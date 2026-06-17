@@ -1,22 +1,21 @@
 import type { Metadata } from "next";
 import type { Locale } from "next-intl";
 
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import { notFound } from "next/navigation";
 
+import { Theme } from "@radix-ui/themes";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
 import { routing } from "@/i18n/routing";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const inter = Inter({
+  subsets: ["latin", "cyrillic"],
+  display: "swap",
+  variable: "--font-inter",
+  weight: "variable",
+  axes: ["opsz"],
 });
 
 export function generateStaticParams() {
@@ -55,12 +54,13 @@ export default async function LocaleLayout({
   setRequestLocale(locale);
 
   return (
-    <html
-      lang={locale}
-      className={`${geistSans.variable} ${geistMono.variable}`}
-    >
+    <html lang={locale} className={inter.variable}>
       <body>
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider>
+          <Theme accentColor="gray" panelBackground="solid">
+            {children}
+          </Theme>
+        </NextIntlClientProvider>
       </body>
     </html>
   );
